@@ -17,14 +17,16 @@
             var idad = document.getElementById('iida')
             var res = document.getElementById( 'res')
             var idade = Number(idad.value)
-            if (idade > 18) {
-                res.innerHTML = `<p>Você é maior de idade e seu voto é obrigatório!</p>`
+            if (idade >= 0 && idade < 16) {
+                res.innerHTML = `<p>Você não pode votar!</p>`
                 } else if (idade >= 16 && idade < 18) {
                     res.innerHTML = `<p>Você não é maior de idade mas seu voto é opcional!</p>`
-                } else if (idade > 65){
+                } else if (idade >= 18 && idade < 65) {
+                    res.innerHTML = `<p>Você é maior de idade e seu voto é obrigatório!`
+                } else if (idade >= 65){
                     res.innerHTML = `<p>Seu voto é opcional!</p>`
                 } else {
-                    console.log('<p>Você não pode votar!</p>')
+                    res.innerHTML = `Idade inválida`
                 }
             }
     </script>
