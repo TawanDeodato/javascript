@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    background-color: lightblue;
+}
+
+header {
+    text-align: center;
+    color: #686868;
+}
+
+p {
+    margin: 0px;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.548);
+    padding: 6px 10px;
+    margin: auto;
+    height: 170px;
+}
+
+option {
+    width: 150px;
+}
+
+div {
+    padding: 5px;
+    margin: 5px;
+}
+
+footer {
+    text-align: center;
+    color: #686868;
+    font-style: italic;
+}
