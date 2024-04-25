@@ -29,3 +29,5 @@ const obj1 = {
         console.log(f)
     }
 }
+
+// Todos esses códigos tem que ser usados no devtools do google.
