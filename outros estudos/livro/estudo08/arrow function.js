@@ -9,7 +9,7 @@ var circleAreaES5 = function circleArea(r) {
 }
 console.log(circleAreaES5(2))
 
-// Arrow Function
+// Arrow Function 
 
 const circleArea = r => { // {1}
     const PI = 3.14
