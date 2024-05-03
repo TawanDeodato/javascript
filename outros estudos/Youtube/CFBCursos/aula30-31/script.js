@@ -21,3 +21,20 @@ arrayElementos.map( (e) => {
     e.innerHTML = "Esse texto foi modificado."
     console.log(e) 
 })
+
+// Estudos sobre manipulação do DOM com getElementByTagName:
+
+// const colecaoHTML = document.getElementsByTagName("div")
+
+// console.log(arrayElementos) // Array
+// console.log(colecaoHTML) // HTML collection
+
+// Transformando HTMLcollection em array:
+
+let colecaoHTML = [...document.getElementsByTagName("div")]
+
+console.log(colecaoHTML)
+
+colecaoHTML.map( (e) => {
+    console.log(e) 
+})
