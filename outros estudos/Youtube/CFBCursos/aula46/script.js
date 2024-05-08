@@ -1,3 +1,5 @@
+// Adicionando e removendo elementos do DOM no JavaScript:
+
 const caixaCursos = document.querySelector("#caixaCursos")
 const btn_c = [...document.querySelectorAll(".curso")]
 const c1_2 = document.querySelector("#c1_2")

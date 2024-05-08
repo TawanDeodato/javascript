@@ -1,3 +1,5 @@
+// Estudos do método every() no JavaScript:
+
 const p_array = document.querySelector("#array")
 const btnPesquisar = document.querySelector("#btnPesquisar")
 const res = document.querySelector("#resultado")
