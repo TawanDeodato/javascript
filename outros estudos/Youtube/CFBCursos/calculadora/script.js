@@ -2,9 +2,12 @@ const teclasNum = [...document.querySelectorAll(".num")]
 const teclasOp = [...document.querySelectorAll(".op")]
 const teclaRes = document.querySelector(".res")
 const display = document.querySelector(".display")
-const off = document.getElementById("toff")
+const tcpy = document.getElementById("tcpy")
 const tLimpar = document.getElementById("tlimpar")
 const tigual = document.getElementById("tigual")
+const calc_aba = document.getElementById("calc_aba")
+const calc = document.getElementById("calc")
+const setaIcon = document.getElementById("setaIcon")
 
 let sinal = false
 let decimal = false
@@ -56,4 +59,17 @@ tigual.addEventListener("click" , (evt) => {
     decimal = false
     const res = eval(display.innerHTML)
     display.innerHTML = res
+})
+
+tcpy.addEventListener("click", (evt) => {
+    navigator.clipboard.writeText(display.innerHTML)
+})
+
+calc_aba.addEventListener("click", (evt) => {
+    calc.classList.toggle("calc_exibir")
+    if (calc.classList.contains("calc_exibir")) {
+        setaIcon.setAttribute("src", "arrowLeft.svg")
+    } else {
+        setaIcon.setAttribute("src", "arrowRight.svg")
+    }
 })
