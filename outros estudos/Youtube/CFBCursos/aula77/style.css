@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: large;
+    border: none;
+}
+
+#div_relogio {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 200px;
+    background-color: #444;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    padding: 10px;
+    border-radius: 10px;
+}
