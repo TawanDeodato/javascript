@@ -4,8 +4,25 @@
     font-size: large;
     border: none;
 }
+@keyframes alarme{
+    0%{opacity: 0;}
+    50%{opacity: 0.5;}
+    100%{opacity: 1;}
+}
 
-#div_relogio {
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid #888;
+}
+
+.div_relogio {
     display: flex;
     justify-content: center;
     align-self: center;
@@ -17,3 +34,28 @@
     padding: 10px;
     border-radius: 10px;
 }
+
+input [type= 'number'] {
+    border: 1px solid black;
+    font-size: larger;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+button {
+    background-color: #aaa;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.alarme {
+    background-color:#ce300c;
+    color:#fff;
+    -webkit-animation: alarme .9s linear infinite;
+    -moz-animation: alarme .9s linear infinite;
+    -ms-animation: alarme .9s linear infinite;
+    -o-animation: alarme .9s linear infinite;
+    animation: alarme .9s linear infinite;
+ }
