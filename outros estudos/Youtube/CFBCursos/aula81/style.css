@@ -1,0 +1,63 @@
+* {
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.controles {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 100%;
+    background-color: #eee;
+    color: black;
+    border-radius: 10px;
+}
+
+.controle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    background-color: white;
+    border: 2px solid rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+button {
+    cursor: pointer;
+    background-color: rgb(2, 2, 151);
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+input[type = 'number'], #num_objetos {
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    width: 150px;
+}
+
+.palco {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    min-height: fill-available;
+    min-height: -webkit-fill-available;
+    background-color: #f8f8f8;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.bola {
+    position: absolute;
+    border-radius: 100px;
+}
