@@ -38,17 +38,35 @@ class Bola {
         this.controle = setInterval(this.controlar, 10)
         // Relacionando uma bolinha criada com a bolinha do array "bolas"
         this.eu = document.getElementById(this.id)
+        numBola++
+        num_objetos.innerHTML = numBola
     }
     minhaPos = () => {
-
+        return this.arrayBolas.indexOf(this)
     }
 
     remover = () => {
-
+        clearInterval(this.controle)
+        bolas = bolas.filter((b) => {
+            if (b.id != this.id) {
+                return b
+            }
+        })
+        this.eu.remove()
+        numBola--
+        num_objetos.innerHTML = numBola
     }
 
     desenhar = () => {
+        const div = document.createElement("div")
+        div.setAttribute("id", this.id)
+        div.setAttribute("class", "bola")
+        div.setAttribute("style", `left:${this.px};top:${this.py};width:${this.size};height:${this.size};backgorund-color:rgb(${this.r},${this.g},${this.b})`)
+        this.palco.appendChild(div)
+    }
 
+    colisao_bordas = () => {
+        
     }
 
     controlar = () => {
