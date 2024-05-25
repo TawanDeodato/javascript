@@ -14,22 +14,26 @@ let contato = {
             email: novoContato.email
         }
         contatos.push(cont)
-        const div = document.createElement("div")
+        destinoDOM.innerHTML = ""
+        contato.forEach((c) => {
+            const div = document.createElement("div")
         div.setAttribute("class", "contato")
         const p_nome = document.createElement("p")
-        p_nome.innerHTML = novoContato.nome
+        p_nome.innerHTML = c.nome
 
         const p_telefone = document.createElement("p")
-        p_telefone.innerHTML = novoContato.telefone
+        p_telefone.innerHTML = c.telefone
 
         const p_email = document.createElement("p")
-        p_email.innerHTML = novoContato.email
+        p_email.innerHTML = c.email
 
         div.appendChild(p_nome)
         div.appendChild(p_telefone)
         div.appendChild(p_email)
 
         destinoDOM.appendChild(div)
+        })
+        
     }
 }
 
