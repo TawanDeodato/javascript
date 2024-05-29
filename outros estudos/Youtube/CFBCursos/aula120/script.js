@@ -9,12 +9,12 @@ document.querySelector("#btn_validar").addEventListener("click", (evt) => {
 
     if(estadoValidacao.valueMissing){
         f_nota.setCustomValidity("Coloca a nota aqui seu arrombado burro!")
-       
     } else if(estadoValidacao.rangeOverflow) {
         f_nota.setCustomValidity("Tu é burro caralho? O máximo da nota é 10!")
     } else if(estadoValidacao.rangeUnderflow) {
         f_nota.setCustomValidity("Como que tu vai tirar uma nota menor que 0? Deixa de ser burro!")
     }
+
 
     f_nota.reportValidity()
     // f_msg.innerHTML = f_nota.validationMessage
