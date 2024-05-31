@@ -66,6 +66,8 @@ async function getPost(id) {
     postContainer.appendChild(title)
     postContainer.appendChild(body)
 
+    console.log(dataComments)
+
     dataComments.map((comment) => {
         createComment(comment)
     })
@@ -79,7 +81,7 @@ function createComment(comment) {
     email.innerText = comment.email
     commentBody.innerText = comment.body
 
-    div.appendChildO(email)
+    div.appendChild(email)
     div.appendChild(commentBody)
 
     commentsContainer.appendChild(div)
