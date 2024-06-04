@@ -8,8 +8,38 @@
 </head>
 <body>
     <form method="get">
-        <input type="number" id="characterId">
-        <button id="btn_go">VAI</button>
+        <h2>Busca do persongem</h2>
+        <label for="characterId">ID do personagem: </label>
+        <input type="number" name="characterId" id="characterId">
+
+        <hr>
+
+        <h2>Informações: </h2>
+
+        <label for="name">Nome</label>
+        <input type="checkbox" name="name" id="name">
+
+        <label for="status">Status</label>
+        <input type="checkbox" name="status" id="status">
+
+        <label for="species">Espécies</label>
+        <input type="checkbox" name="species" id="species">
+
+        <label for="gender">Gênero</label>
+        <input type="checkbox" name="gender" id="gender">
+
+        <label for="origin">Planeta de origem</label>
+        <input type="checkbox" name="origin" id="origin">
+
+        <label for="image">Foto</label>
+        <input type="checkbox" name="image" id="image">
+        
+        <label for="episode">Episódio</label>
+        <input type="checkbox" name="episode" id="episode">
+
+        <hr>
+
+        <button id="btn_pesq">Pesquisar</button>
     </form>
     <pre id="content"></pre>
     <img src="" alt="" id="img">
