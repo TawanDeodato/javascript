@@ -30,19 +30,20 @@
 
         <label for="origin">Planeta de origem</label>
         <input type="checkbox" name="origin" id="origin">
-
-        <label for="image">Foto</label>
-        <input type="checkbox" name="image" id="image">
         
         <label for="episode">Episódio</label>
         <input type="checkbox" name="episode" id="episode">
 
         <hr>
 
-        <button id="btn_pesq">Pesquisar</button>
+        <button type="submit" id="btn_pesq">Pesquisar</button>
+        <button type="reset" id="btn_limpar">Limpar</button>
     </form>
-    <pre id="content"></pre>
-    <img src="" alt="" id="img">
+
+    <div id="result_style">
+        <img src="" alt="" id="img">
+        <div id="content"></div>
+    </div>
 
     <script src="script.js"></script>
 </body>
