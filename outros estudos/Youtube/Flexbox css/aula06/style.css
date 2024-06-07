@@ -2,17 +2,34 @@
     background-color: rgb(151, 151, 151);
     border-radius: 5px;
     display: flex;
-    
+    border: 5px solid black;
+    width: 800px;
+
 }
 
 .f_item {
     background-color: rgba(255 255 255 / 0.25);
     border-radius: 5px;
     border: 1px solid black;
-    margin: 10px;
-    padding: 20px;
+    margin: 0;
+    padding: 20px 0;
+    width: 100px;
     text-align: center;
     transition: all 150ms ease;
+    flex-grow: 1;
+}
+.f_item:nth-child(1):hover {
+    flex-grow: 3;
+}
+
+.f_item:nth-child(2):hover {
+    flex-grow: 3;
+}
+.f_item:nth-child(3):hover {
+    flex-grow: 3;
+}
+.f_item:nth-child(4):hover {
+    flex-grow: 3;
 }
 
 .f_item:hover {
