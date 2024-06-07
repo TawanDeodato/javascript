@@ -1,4 +1,4 @@
-.container {
+body.container {
     background-color: rgb(95, 95, 95);
     border-radius: 5px;
     display: flex;
@@ -6,13 +6,19 @@
     min-height: 100vh;
 }
 
-.container main {
+.content {
+    display: flex;
     flex: 1;
-    text-align: center;
-    padding: 10px;
-    background-color: transparent;
-    border: none;
-    color: white;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1;
+}
+
+.sidebar, 
+.ads {
+    flex-basis: 100px;
 }
 
 .style {
@@ -27,4 +33,13 @@
 
 .style:hover {
     background-color: #e2e2e2;
+}
+
+@media (min-width: 56.25em) { /* 900px */
+    .container {
+        flex-direction: row;
+    }
+    .sidebar {
+        order: -1;
+    }
 }
